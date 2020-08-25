@@ -3,6 +3,10 @@
 }
 
 .imagen{
-    width: 30%;
-    height: 30%;
+    width: 10%;
+    height: 10%;
+}
+#imagen1{
+    width: 600px;
+    height: 150px;
 }
