@@ -1,19 +1,18 @@
 #FondoDescripcion{
-    background-image: url("Imagenes/fondo.jfif");
+    padding-bottom: 50px;
+    background-image: url("Imagenes/FondoDescripcion.jfif");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 #CuerpoPrincipal{
-    background-image: url("Imagenes/Fondo13.jpg");
+    background-image: url("Imagenes/FondoPrincipal.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-#FontBlack{
-    color:black;
-}
+
 #FontWhite{
     color: white;
 }
