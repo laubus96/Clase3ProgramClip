@@ -1,3 +1,23 @@
 #FondoDescripcion{
     background-image: url("Imagenes/fondo.jfif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
+#CuerpoPrincipal{
+    background-image: url("Imagenes/Fondo13.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#FontBlack{
+    color:black;
+}
+#FontWhite{
+    color: white;
+}
+.FontMediano{
+    font-size: 25px;
+    }
+
