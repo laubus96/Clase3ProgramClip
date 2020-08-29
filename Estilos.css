@@ -1,11 +1,12 @@
-#FondoDescripcion{
+#FondoDescripcion {
     padding-bottom: 50px;
     background-image: url("Imagenes/FondoDescripcion.jfif");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
-#CuerpoPrincipal{
+
+#CuerpoPrincipal {
     background-image: url("Imagenes/FondoPrincipal.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -13,18 +14,24 @@
 }
 
 
-#FontWhite{
+#FontWhite {
     color: white;
 }
-.FontMediano{
-    font-size: 25px;
-    }
 
-#TituloTabla{
-    color: white;
-    margin-top: 75px ;
+.FontMediano {
+    font-size: 25px;
 }
-.container-fluid{
+
+#TituloTabla {
+    color: white;
+    margin-top: 75px;
+}
+
+.container-fluid {
     padding-top: 2rem;
     padding-bottom: 2rem;
+}
+
+#Titulo {
+    padding-top: 70px;
 }
