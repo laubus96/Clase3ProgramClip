@@ -24,3 +24,7 @@
     color: white;
     margin-top: 75px ;
 }
+.container-fluid{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
