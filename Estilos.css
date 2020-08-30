@@ -27,11 +27,38 @@
     margin-top: 75px;
 }
 
-.container-fluid {
+#containerPrincipal {
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
 
 #Titulo {
     padding-top: 70px;
+}
+
+#Redirec {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+#inicio {
+    padding-left: 380px;
+    padding-bottom: 36px;
+
+}
+
+#FondoSesion {
+    background-image: url("Imagenes/IniciarSesion.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.Sombra {
+    box-shadow: 6px 6px 20px #787373
 }
