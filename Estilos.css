@@ -7,7 +7,7 @@
 }
 
 #CuerpoPrincipal {
-    background-image: url("Imagenes/FondoPrincipal.jpg");
+    background-image: url("Imagenes/FondoLibro.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -29,7 +29,7 @@
 
 #containerPrincipal {
     padding-top: 2rem;
-    padding-bottom: 2rem;
+
 }
 
 #Titulo {
@@ -61,4 +61,30 @@
 
 .Sombra {
     box-shadow: 6px 6px 20px #787373
+}
+
+#Adivinar {
+    background-image: url("Imagenes/Adivinar.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#containerAdivinazas {
+    padding-bottom: 600px;
+    background-image: url("Imagenes/containerAdivinaza.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 800px;
+    height: 887px;
+}
+
+#Respuestas {
+    color: white;
+
+}
+
+#Sesion {
+    background-image: url("Imagenes/fondoFormSesion.png");
 }

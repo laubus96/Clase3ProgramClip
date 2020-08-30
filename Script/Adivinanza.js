@@ -1,21 +1,29 @@
 var respuestaCorrecta = "Libro";
 var contador = 0;
-document.getElementById("Boton").disabled = true;
+document.getElementById("botonAdivinar").disabled = true;
 document.getElementById("Respuesta").disabled = true;
 
 function Empezar() {
-    if (document.getElementById("Boton").disabled == true && document.getElementById("Respuesta").disabled == true) {
-        document.getElementById("Boton").disabled = false;
+    if (document.getElementById("botonAdivinar").disabled == true && document.getElementById("Respuesta").disabled == true) {
+        document.getElementById("botonAdivinar").disabled = false;
         document.getElementById("Respuesta").disabled = false;
+        document.getElementById("botonEmpezar").disabled = true;
     }
+    document.getElementById("Respuestas").innerHTML += "<br> Comianza el juego, mucha suerte!!";
+    document.getElementById("Respuestas").innerHTML += "<br>  Primer intento: ";
 
 
 }
 
 function Terminar() {
     document.getElementById("Respuestas").innerHTML += "";
-    document.getElementById("Boton").disabled = true
+    document.getElementById("botonAdivinar").disabled = true
     document.getElementById("Respuesta").disabled = true;
+    if (document.getElementById("botonEmpezar").disabled == true) {
+        document.getElementById("botonEmpezar").disabled = false;
+    }
+    contador = 0;
+
 }
 
 
@@ -34,7 +42,8 @@ function Adivinar() {
 
         } else {
 
-            document.getElementById("Respuestas").innerHTML += "<br>  -Respuesta incorrecta te quedan 3 intentos";
+            document.getElementById("Respuestas").innerHTML += "<br>  -Respuesta incorrecta";
+            document.getElementById("Respuestas").innerHTML += "<br>  Segundo intento: ";
             document.getElementById("Respuesta").focus();
             document.getElementById("Respuesta").value = "";
             contador += 1;
@@ -53,8 +62,9 @@ function Adivinar() {
 
         } else {
 
-            document.getElementById("Respuestas").innerHTML += "<br>  -Respuesta incorrecta te quedan 2 intentos";
-            document.getElementById("Respuestas").innerHTML += "<br> - Pista.... tiene dos tapas";
+            document.getElementById("Respuestas").innerHTML += "<br>  -Respuesta incorrecta";
+            document.getElementById("Respuestas").innerHTML += "<br> +Pista.... tiene dos tapas.... piense..";
+            document.getElementById("Respuestas").innerHTML += "<br>  Tercer intento: ";
             document.getElementById("Respuesta").focus();
             document.getElementById("Respuesta").value = "";
             contador += 1;
@@ -73,7 +83,8 @@ function Adivinar() {
         } else {
 
             document.getElementById("Respuestas").innerHTML += "<br>  -Respuesta incorrecta te queda 1 intento";
-            document.getElementById("Respuestas").innerHTML += "<br> - Pista.... lo usas para leer";
+            document.getElementById("Respuestas").innerHTML += "<br>  +Pista.... lo usas para leer.... tomese un momento para pensar...";
+            document.getElementById("Respuestas").innerHTML += "<br>  Cuarto intento intento: ";
             document.getElementById("Respuesta").focus();
             document.getElementById("Respuesta").value = "";
             contador += 1;

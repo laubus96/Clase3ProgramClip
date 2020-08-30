@@ -10,32 +10,48 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="../Estilos.css">
     <title>Hello, world!</title>
 </head>
 
-<body>
-    <h1>Bienvenido al juego de las adivinazas</h1>
-    <p>Debe resolver la siguiente adivinanza</p>
-    <p>Tengo hojas sin ser árbol,
-        te hablo sin tener voz,
-        si me abres no me quejo,
-        adivina quien soy yo.</p>
+<body id="Adivinar" class="text-center" id="Adivinar">
+    <div class="container" id="containerAdivinazas">
+        <div class="row">
+
+            <div class="col-lg-12">
+                <h1 id="FontWhite">Bienvenido al juego de las adivinazas</h1>
+                <p id="FontWhite">Debe resolver la siguiente adivinanza</p>
+                <p id="FontWhite">Tengo hojas sin ser árbol,
+                    te hablo sin tener voz,
+                    si me abres no me quejo,
+                    adivina quien soy yo.</p>
 
 
 
-    <div class="form-group">
-        <label for="Respuesta">Escriba la respuesta:</label>
-        <input type="text" class="form-control" name="Respuesta" id="Respuesta" aria-describedby="helpId"
-            placeholder="">
-        <small id="helpId" class="form-text text-muted"></small>
+                <div class="form-group">
+                    <label id="FontWhite" for="Respuesta">Escriba la respuesta:</label>
+                    <input type="text" class="form-control" name="Respuesta" id="Respuesta" aria-describedby="helpId"
+                        placeholder="">
+                    <small id="helpId" class="form-text text-muted"></small>
+
+
+                </div>
+
+                <button type="button " id="botonAdivinar" class="btn btn-info" onclick="Adivinar()">Responder</button>
+                <button type="button" id="botonEmpezar" class="btn btn-info" onclick="Empezar()">Empezar</button>
+                <a href="Principal.html"><button type="button" class="btn btn-secondary ">Volver </button></a>
+
+                <div id="Respuestas">
+                </div>
+
+
+            </div>
+
+        </div>
 
 
     </div>
 
-    <button type="button " value="Responder" id="Boton" class="btn btn-info" onclick="Adivinar()">Responder</button>
-    <button type="button" id="botonEmpezar" class="btn btn-info" onclick="Empezar()">Empezar</button>
-    <div id="Respuestas">
-    </div>
 
 
 
