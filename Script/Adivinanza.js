@@ -5,11 +5,13 @@ document.getElementById("Respuesta").disabled = true;
 
 /* Funcion que permite empezar  el juego habilitando y desabilitando componentes  */
 function Empezar() {
+    document.getElementById("Respuestas").innerHTML = "";
     if (document.getElementById("botonAdivinar").disabled == true && document.getElementById("Respuesta").disabled == true) {
         document.getElementById("botonAdivinar").disabled = false;
         document.getElementById("Respuesta").disabled = false;
         document.getElementById("botonEmpezar").disabled = true;
     }
+    document.getElementById("Respuestas").innerHTML += "<br> -----------------------------------------------------------";
     document.getElementById("Respuestas").innerHTML += "<br> Comianza el juego, mucha suerte!!";
     document.getElementById("Respuestas").innerHTML += "<br>  Primer intento: ";
 
@@ -17,7 +19,7 @@ function Empezar() {
 }
 /* Funcion que permite terminar  el juego habilitando y desabilitando componentes  */
 function Terminar() {
-    document.getElementById("Respuestas").innerHTML += "";
+
     document.getElementById("botonAdivinar").disabled = true
     document.getElementById("Respuesta").disabled = true;
     if (document.getElementById("botonEmpezar").disabled == true) {
@@ -35,7 +37,7 @@ function Adivinar() {
     if (contador == 0) {
         var respuestaIngresada = document.getElementById("Respuesta").value;
         if (respuestaIngresada == respuestaCorrecta) {
-            document.getElementById("Respuestas").innerHTML += "<br>  -Respuesta correcta";
+            document.getElementById("Respuestas").innerHTML += "<br>  -Has adivinado!!!!! Libro era la respuesta correcta!! Felicitaciones!!";
             document.getElementById("Respuesta").value = "";
             Terminar();
 
@@ -46,7 +48,7 @@ function Adivinar() {
             document.getElementById("Respuestas").innerHTML += "<br>  -Respuesta incorrecta";
             document.getElementById("Respuestas").innerHTML += "<br>  Segundo intento: ";
             document.getElementById("Respuesta").focus();
-            document.getElementById("Respuesta").value = "";
+            document.getElementById("Respuesta").value = "";;
             contador += 1;
 
 
@@ -55,7 +57,7 @@ function Adivinar() {
     } else if (contador == 1) {
         var respuestaIngresada = document.getElementById("Respuesta").value;
         if (respuestaIngresada == respuestaCorrecta) {
-            document.getElementById("Respuestas").innerHTML += "<br>  -Respuesta correcta";
+            document.getElementById("Respuestas").innerHTML += "<br>  -Has adivinado!!!!! Libro era la respuesta correcta!! Felicitaciones!!";
             document.getElementById("Respuesta").value = "";
             Terminar();
 
@@ -75,7 +77,7 @@ function Adivinar() {
     } else if (contador == 2) {
         var respuestaIngresada = document.getElementById("Respuesta").value;
         if (respuestaIngresada == respuestaCorrecta) {
-            document.getElementById("Respuestas").innerHTML += "<br>  -Respuesta correcta";
+            document.getElementById("Respuestas").innerHTML += "<br>  -Has adivinado!!!!! Libro era la respuesta correcta!! Felicitaciones!!";
             document.getElementById("Respuesta").value = "";
             Terminar();
 
@@ -94,7 +96,7 @@ function Adivinar() {
     } else if (contador == 3) {
         var respuestaIngresada = document.getElementById("Respuesta").value;
         if (respuestaIngresada == respuestaCorrecta) {
-            document.getElementById("Respuestas").innerHTML += "<br>  -Respuesta correcta";
+            document.getElementById("Respuestas").innerHTML += "<br>  -Has adivinado!!!!! Libro era la respuesta correcta!! Felicitaciones!!";
             document.getElementById("Respuesta").value = "";
             Terminar();
 
