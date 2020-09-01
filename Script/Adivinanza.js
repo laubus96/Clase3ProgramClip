@@ -3,6 +3,7 @@ var contador = 0;
 document.getElementById("botonAdivinar").disabled = true;
 document.getElementById("Respuesta").disabled = true;
 
+/* Funcion que permite empezar  el juego habilitando y desabilitando componentes  */
 function Empezar() {
     if (document.getElementById("botonAdivinar").disabled == true && document.getElementById("Respuesta").disabled == true) {
         document.getElementById("botonAdivinar").disabled = false;
@@ -14,7 +15,7 @@ function Empezar() {
 
 
 }
-
+/* Funcion que permite terminar  el juego habilitando y desabilitando componentes  */
 function Terminar() {
     document.getElementById("Respuestas").innerHTML += "";
     document.getElementById("botonAdivinar").disabled = true
@@ -27,7 +28,7 @@ function Terminar() {
 }
 
 
-
+/* Funcion que permite contar la cantidad de respuestas y a partir de ahi actuar a diferentes condiciones  */
 function Adivinar() {
 
 
