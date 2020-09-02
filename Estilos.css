@@ -1,10 +1,13 @@
 #FondoDescripcion {
     padding-bottom: 50px;
-    background-image: url("Imagenes/FondoDescripcion.jfif");
+    background-image: url("Imagenes/Fondo.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
 }
+
+
 
 #CuerpoPrincipal {
     background-image: url("Imagenes/FondoLibro.jpg");
@@ -27,18 +30,36 @@
     margin-top: 75px;
 }
 
-#containerPrincipal {
-    padding-top: 2rem;
+.links-title {
+    font-family: "Montserrat-SemiBold", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: white;
 
 }
+
+
+ol,
+ul {
+    list-style: none;
+
+}
+
+li {
+    padding-right: 3rem;
+}
+
 
 #Titulo {
     padding-top: 70px;
 }
 
+
+
+
 #Redirec {
-    padding-top: 80px;
-    padding-bottom: 50px;
+    padding-top: 10px;
+
     background-color: white;
     background-repeat: no-repeat;
     background-position: center;
@@ -57,6 +78,10 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+#Menu {
+    background-color: black;
 }
 
 .Sombra {
@@ -87,4 +112,72 @@
 
 #Sesion {
     background-image: url("Imagenes/fondoFormSesion.png");
+}
+
+
+
+
+.slider {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+
+
+
+
+}
+
+.slider ul {
+    padding: 0;
+    display: flex;
+    width: 400%;
+    animation: cambio 25s infinite alternate;
+
+
+}
+
+.slider li {
+    list-style: none;
+    width: 100%;
+
+    padding: 0;
+}
+
+.slider img {
+    width: 100%;
+    height: 400px;
+}
+
+@keyframes cambio {
+    0% {
+        margin-left: 0%;
+    }
+
+    23% {
+        margin-left: 0%;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    48% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    73% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: -300%;
+    }
 }
