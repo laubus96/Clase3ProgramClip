@@ -1,183 +1,184 @@
 #FondoDescripcion {
-    padding-bottom: 50px;
-    background-image: url("Imagenes/Fondo.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
+	padding-bottom: 70px;
+	background-image: url('Imagenes/Fondo.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
-
-
 
 #CuerpoPrincipal {
-    background-image: url("Imagenes/FondoLibro.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+	background-image: url('Imagenes/FondoLibro.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
-
 #FontWhite {
-    color: white;
+	color: white;
 }
 
 .FontMediano {
-    font-size: 25px;
+	font-size: 25px;
 }
 
 #TituloTabla {
-    color: white;
-    margin-top: 75px;
+	color: white;
+	margin-top: 75px;
 }
 
 .links-title {
-    font-family: "Montserrat-SemiBold", Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    text-transform: uppercase;
-    color: white;
-
+	font-family: 'Montserrat-SemiBold', Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: white;
 }
-
 
 ol,
 ul {
-    list-style: none;
-
+	list-style: none;
 }
 
 li {
-    padding-right: 3rem;
+	padding-right: 3rem;
 }
-
 
 #Titulo {
-    padding-top: 70px;
+	padding-top: 70px;
 }
-
-
-
 
 #Redirec {
-    padding-top: 10px;
+	padding-top: 10px;
 
-    background-color: white;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-}
-
-#inicio {
-    padding-left: 380px;
-    padding-bottom: 36px;
-
-}
-
-#FondoSesion {
-    background-image: url("Imagenes/IniciarSesion.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+	background-color: white;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
 #Menu {
-    background-color: black;
+	background-color: black;
 }
 
 .Sombra {
-    box-shadow: 6px 6px 20px #787373
+	box-shadow: 6px 6px 20px #787373;
 }
 
 #Adivinar {
-    background-image: url("Imagenes/Adivinar.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+	background-image: url('Imagenes/Adivinar.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
 #containerAdivinazas {
-    padding-bottom: 600px;
-    background-image: url("Imagenes/containerAdivinaza.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 800px;
-    height: 887px;
+	padding-bottom: 600px;
+	background-image: url('Imagenes/containerAdivinaza.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 800px;
+	height: 887px;
 }
 
 #Respuestas {
-    color: white;
-
+	color: white;
 }
 
-#Sesion {
-    background-image: url("Imagenes/fondoFormSesion.png");
-}
-
-
-
+/* slider */
 
 .slider {
-    width: 100%;
-    margin: auto;
-    overflow: hidden;
-
-
-
-
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
 }
 
 .slider ul {
-    padding: 0;
-    display: flex;
-    width: 400%;
-    animation: cambio 25s infinite alternate;
-
-
+	padding: 0;
+	display: flex;
+	width: 400%;
+	animation: cambio 25s infinite alternate;
 }
 
 .slider li {
-    list-style: none;
-    width: 100%;
+	list-style: none;
+	width: 100%;
 
-    padding: 0;
+	padding: 0;
 }
 
 .slider img {
-    width: 100%;
-    height: 400px;
+	width: 100%;
+	height: 400px;
 }
 
 @keyframes cambio {
-    0% {
-        margin-left: 0%;
-    }
+	0% {
+		margin-left: 0%;
+	}
 
-    23% {
-        margin-left: 0%;
-    }
+	23% {
+		margin-left: 0%;
+	}
 
-    25% {
-        margin-left: -100%;
-    }
+	25% {
+		margin-left: -100%;
+	}
 
-    48% {
-        margin-left: -100%;
-    }
+	48% {
+		margin-left: -100%;
+	}
 
-    50% {
-        margin-left: -200%;
-    }
+	50% {
+		margin-left: -200%;
+	}
 
-    73% {
-        margin-left: -200%;
-    }
+	73% {
+		margin-left: -200%;
+	}
 
-    75% {
-        margin-left: -300%;
-    }
+	75% {
+		margin-left: -300%;
+	}
 
-    100% {
-        margin-left: -300%;
-    }
+	100% {
+		margin-left: -300%;
+	}
+}
+
+/* Menu Principal*/
+a:hover {
+	background-color: transparent !important;
+}
+
+/* estilos de fondo de inisiar sesion*/
+#FondoSesion {
+	background-image: url('Imagenes/FondoLibro.jpg');
+
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 0;
+	margin: 0;
+	height: 100vh;
+}
+#Sesion {
+	background-image: url('Imagenes/fondoFormSesion.png');
+
+	border-radius: 10px;
+	width: 320px;
+	height: 430px;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	box-sizing: border-box;
+	padding: 70px 30px;
+}
+.ImagenLogin {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position: absolute;
+	top: -125px;
+	left: calc(50% - 50px);
 }
