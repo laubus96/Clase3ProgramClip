@@ -26,7 +26,14 @@
     margin-top: 75px;
 }
 
+#TituloPrncipal {
+    padding-top: 40px;
+    font-size: 60px;
+}
 
+#Poema {
+    padding-bottom: 40px;
+}
 
 #Redirec {
     padding-top: 10px;
@@ -241,6 +248,7 @@ li {
     border-radius: 30px;
     background-color: palegreen;
     padding-bottom: 4px;
+    padding-top: 4px;
     margin-top: 20px;
 }
 
