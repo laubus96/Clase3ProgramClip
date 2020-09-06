@@ -6,6 +6,16 @@ body {
 
 }
 
+.volver {
+
+    padding-top: 20px;
+    padding-right: 0;
+
+    display: block;
+
+
+}
+
 .contenedor {
     max-width: 1200px;
     margin: 50px auto;
